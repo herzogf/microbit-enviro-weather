@@ -5,7 +5,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Heart)
 })
 envirobit.onClap(function () {
-    if (envirobit.timeSinceLastClap() < 500) {
+    if (envirobit.timeSinceLastClap() < 1000) {
         basic.clearScreen()
         basic.showString("" + envirobit.getTemperature() + " C")
         basic.pause(500)
